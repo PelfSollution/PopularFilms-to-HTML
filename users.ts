@@ -28,6 +28,7 @@ export class User {
 
   get fullName() {
     return `${this.name.first} ${this.name.last}`;
+    
   }
 }
 
@@ -37,6 +38,10 @@ export const loadUsers = async (n: number) => {
   const users: Array<User> = [];
   for (const { gender, name, location, login, email, picture } of results) {
     users.push(new User(gender, name, location, login, email, picture));
+    // quiero sacar por consola cada nuevo usuario  que se crea
+    /*console.log(users);*/
   }
+ 
+  console.log(users[1].fullName);
   return users;
 };

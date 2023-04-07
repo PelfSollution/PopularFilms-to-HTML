@@ -1,4 +1,4 @@
-import { User } from "./users.js";
+import { User } from "./users.ts";
 
 const head = (title: string) => `
 <head>
@@ -7,15 +7,24 @@ const head = (title: string) => `
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}</title>
   <style>
+
+
     body {
-      margin: 0;
-      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+     
     }
+    
+    .content {
+      flex-basis: calc(50% - 20px);
+      margin: 10px;
+    }
+
     .user {
       font-family: sans-serif;
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: right;
       padding: .4rem;
       border-bottom: 1px solid #ddd;
     }
@@ -30,28 +39,40 @@ const head = (title: string) => `
     }
     .user .email {
       font-family: monospace;
+      font-size:11px;
+      color:blue;
     }
+
+    .user .location{
+      color: #666;
+      font-size: 11px;
+    }
+
   </style>
 </head>`;
 
 const renderUsers = (users: Array<User>) => {
   let html = "";
   for (const user of users) {
-    html += `<div class="user">
+    html += `<div class="content">
+    <div class="user">
       <img src="${user.picture.medium}" />
       <div class="data">
         <div class="name">${user.fullName}</div>
-        <div class="email">${user.email}</div>
+        <a href="mailto:${user.email}" class="email" >${user.email}</a>
+        <div class="location">${user.location.city}</div>
       </div>
-    </div>`;
+    </div>
+  </div>`;
   }
   return html;
 }
 
 export const render = (users: Array<User>) => {
+  const title = `Lista de ${users.length} Usuarios`
   return `
 <html>
-  ${head("User List")}
+  ${head(title)}
   <body>
     ${renderUsers(users)}
   </body>
