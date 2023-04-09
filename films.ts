@@ -12,6 +12,14 @@ export class Film {
     return `https://image.tmdb.org/t/p/w500${this.poster_path}`;
   }
 }
+  //la forma que he encontrado para obtener el director es con otra llamada a la api a la pagina credits
+  async function getDirector(movieId: number, apiKey: string): Promise<string> {
+    const creditsUrl = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${apiKey}`;
+    const response = await fetch(creditsUrl);
+    const { crew } = await response.json();
+    const director = crew.find((member: any) => member.job === 'Director');
+    return director ? director.name : 'Director no disponible';
+  }
 
 export const loadFilms = async (n: number) => {
   const apiKey = "6ce63d65fe76626c5722de6d46de0b89";
@@ -24,10 +32,10 @@ export const loadFilms = async (n: number) => {
     id,
     title,
     release_date,
-    director,
     poster_path,
     overview,
   } of results) {
+    const director = await getDirector(id, apiKey);
     films.push(
       new Film(id, title, release_date, director, poster_path, overview)
     );
