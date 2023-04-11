@@ -8,8 +8,10 @@ import { render } from "./render.ts";
   await writeFile("index.html", html);
 
   // Generar páginas individuales para cada película
-  films.forEach(async (film) => {
-    const filmHtml = render([film], true);
-    await writeFile(`films/film-${film.id}.html`, filmHtml);
-  });
+  await Promise.all(
+    films.map(async (film) => {
+      const filmHtml = render([film], true);
+      await writeFile(`films/film-${film.id}.html`, filmHtml);
+    })
+  );
 })();

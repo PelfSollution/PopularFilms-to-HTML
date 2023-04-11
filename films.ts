@@ -1,3 +1,4 @@
+import { apiKey } from "./config.ts";
 export class Film {
   constructor(
     public id: number,
@@ -22,7 +23,6 @@ export class Film {
   }
 
 export const loadFilms = async (n: number) => {
-  const apiKey = "6ce63d65fe76626c5722de6d46de0b89";
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=1`
   );

@@ -21,13 +21,13 @@ const renderFilmDetails = (film: Film): string => {
       <p>Director: ${film.director}</p>
       <h3>Sinopsis:</h3>
       <p>${film.overview}</p>
-      <a href="index.html" class="back-to-list">Volver al listado</a>
+      <a href="../index.html" class="back-to-list">Volver al listado</a>
+      <link rel="stylesheet" href="../styles.css" />
     </div>
   `;
 };
 
 export function render(films: Film[], isDetailsPage: boolean = false): string {
-  
   const filmCards = films.map((film) =>
   isDetailsPage ? renderFilmDetails(film) : renderFilmCard(film)
 );
@@ -53,4 +53,4 @@ export function render(films: Film[], isDetailsPage: boolean = false): string {
       </body>
     </html>
   `;
-}
+};
