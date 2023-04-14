@@ -22,15 +22,12 @@ const renderFilmDetails = (film: Film): string => {
       <h3>Sinopsis:</h3>
       <p>${film.overview}</p>
       <a href="../index.html" class="back-to-list">Volver al listado</a>
-      <link rel="stylesheet" href="../styles.css" />
     </div>
   `;
 };
 
-export function render(films: Film[], isDetailsPage: boolean = false): string {
-  const filmCards = films.map((film) =>
-  isDetailsPage ? renderFilmDetails(film) : renderFilmCard(film)
-);
+export function renderList(films: Film[]): string {
+  const filmCards = films.map(renderFilmCard).join('');
 
   return `
     <!DOCTYPE html>
@@ -48,6 +45,32 @@ export function render(films: Film[], isDetailsPage: boolean = false): string {
         <main>
           <div class="film-container">
             ${filmCards}
+          </div>
+        </main>
+      </body>
+    </html>
+  `;
+};
+
+export function renderDetails(film: Film): string {
+  const filmDetails = renderFilmDetails(film);
+
+  return `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>${film.title}</title>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <header>
+          <h1>${film.title}</h1>
+        </header>
+        <main>
+          <div class="film-container-details">
+            ${filmDetails}
           </div>
         </main>
       </body>
