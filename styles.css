@@ -21,3 +21,32 @@ h1 {
   margin: 0 auto;
   padding: 1rem;
 }
+
+.film-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.film-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+
+
+
+.film-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
