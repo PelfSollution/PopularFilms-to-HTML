@@ -5,8 +5,8 @@ const renderFilmCard = (film: Film): string => {
     <div class="film-card">
       <img src="${film.getImageUrl()}" alt="${film.title}" />
       <h2>${film.title}</h2>
-      <p>Fecha de lanzamiento: ${film.release_date}</p>
-      <p>Director: ${film.director}</p>
+      <p><strong>Fecha de lanzamiento:</strong> ${film.release_date}</p>
+      <p><strong>Director:</strong> ${film.director}</p>
       <a href="films/film-${film.id}.html">Detalles</a>
     </div>
   `;
@@ -17,8 +17,8 @@ const renderFilmDetails = (film: Film): string => {
     <div class="film-card-interior">
       <img src="${film.getImageUrl()}" alt="${film.title}">
       <h2>${film.title}</h2>
-      <p>Fecha de lanzamiento: ${film.release_date}</p>
-      <p>Director: ${film.director}</p>
+      <p><strong>Fecha de lanzamiento:</strong> ${film.release_date}</p>
+      <p><strong>Director:</strong> ${film.director}</p>
       <h3>Sinopsis:</h3>
       <p>${film.overview}</p>
       <a href="../index.html" class="back-to-list">Volver al listado</a>
@@ -40,7 +40,7 @@ export function renderList(films: Film[]): string {
       </head>
       <body>
         <header>
-          <h1>Listado de películas</h1>
+          <h1><img src="img/logo.svg" alt="Logo tmdb">Listado de películas</h1>
         </header>
         <main>
           <div class="film-container">
