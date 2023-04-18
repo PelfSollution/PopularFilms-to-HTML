@@ -19,9 +19,9 @@ const renderFilmDetails = (film: Film): string => {
       <h2>${film.title}</h2>
       <p><strong>Fecha de lanzamiento:</strong> ${film.release_date}</p>
       <p><strong>Director:</strong> ${film.director}</p>
-      <h3>Sinopsis:</h3>
+      <p><strong>Sinopsis:</strong></p>
       <p>${film.overview}</p>
-      <a href="../index.html" class="back-to-list">Volver al listado</a>
+      <a href="../index.html" class="volver">Volver al listado</a>
     </div>
   `;
 };
@@ -62,7 +62,7 @@ export function renderDetails(film: Film): string {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>${film.title}</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="../styles.css" />
       </head>
       <body>
         <header>
