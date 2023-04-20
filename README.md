@@ -25,6 +25,8 @@ Para hacer esta práctica hay que:
 
 bun run main.ts
 
+**Nuevas Funcionalidades**
 
-
+- [x] Información de provedores de streaming donde se pueda ver la película (API Just Watch)
+- [] Paginación
 

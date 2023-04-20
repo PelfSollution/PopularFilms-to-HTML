@@ -11,10 +11,15 @@ function createParagraph(title: string, content: string): string {
 const renderFilmCard = (film: Film): string => {
   const fechaLanzamiento = createParagraph("Fecha de lanzamiento", film.release_date);
   const director = createParagraph("Director", film.director);
-  return `
+
+  const hasWatchProviders = film.watchProvidersES.length > 0;
+  const filmTitleClass = hasWatchProviders ? "film-title with-providers" : "film-title";
+
+
+ return `
     <div class="film-card">
       <img src="${film.getImageUrl()}" alt="${film.title}" />
-      <h2>${film.title}</h2>
+      <h2 class="${filmTitleClass}">${film.title}</h2>
       ${fechaLanzamiento}
       ${director}
       <a href="films/film-${film.id}.html">Detalles</a>
@@ -25,6 +30,15 @@ const renderFilmCard = (film: Film): string => {
 const renderFilmDetails = (film: Film): string => {
   const fechaLanzamiento = createParagraph("Fecha de lanzamiento", film.release_date);
   const director = createParagraph("Director", film.director);
+  const watchProvidersList = film.watchProvidersES.map(provider => `<li><img class="logo" src="${provider.getImageLogo()}" alt="${provider.provider_name}" title="${provider.provider_name}"></li>`).join('');
+  const watchProvidersSection = watchProvidersList.length > 0 ? `
+    <div class="watch-providers">
+      <h3>Proveedores de transmisión en línea (España)</h3>
+      <ul>
+        ${watchProvidersList}
+      </ul>
+    </div>` : `<p class="aviso-providers">No se encontraron proveedores de transmisión en línea en España para esta película.</p>`;
+
   return `
     <div class="film-card-interior">
       <img src="${film.getImageUrl()}" alt="${film.title}">
@@ -32,6 +46,7 @@ const renderFilmDetails = (film: Film): string => {
       ${fechaLanzamiento}
       ${director}
       <p>${film.overview}</p>
+      ${watchProvidersSection}
       <a href="../index.html" class="volver">Volver al listado</a>
     </div>
   `;

@@ -48,7 +48,7 @@ h1 {
 
 .film-card {
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #e9f0fe;
   border-radius: 10px;
   padding: 1rem;
   width: 100%;
@@ -132,4 +132,38 @@ h1 {
     width: 100%;
     max-width: 30%;
   }
+}
+
+
+
+.film-title.with-providers {
+  color: #0070f3; /* Cambia este valor al color que desees */
+}
+
+
+
+.logo{
+  max-width: 50px;
+  margin: 5px;
+}
+
+.watch-providers ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
+
+.watch-providers li {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.aviso-providers{
+  background-color: #5f6368;
+  color:#fff;
+  font-size: 16px;
 }
