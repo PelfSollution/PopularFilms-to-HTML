@@ -1,25 +1,6 @@
 # Generador de HTML en Typescript
 
-Se trata de hacer un programa en Typescript que genera una página en HTML a partir de datos leídos en JSON. Se proporciona un ejemplo sencillo, con una sola página, a modo de guía.
-
-El programa debe leer datos de alguna API (habría que buscar APIs que devuelvan datos en JSON), cargar esos datos en objetos de una clase creada especialmente para ello (escogiendo los campos que se quieren conservar, ya que quizás la API devuelve muchos más), y luego generar HTML incrustando los datos en el HTML.
-
-El tipo de los datos es libre, según la API, pero la página principal (`index.html`) debería ser una lista de elementos (el ejemplo proporcionado son usuarios, pero pueden ser películas, libros, coches, eventos, etc.) y luego hay que generar páginas para cada elemento de la lista, de tal manera que la página principal tenga links (elementos de tipo `<a>`) a las páginas individuales. Por ejemplo, si se muestran películas, `index.html` mostraría una lista de películas y luego habría varios ficheros `.html` uno para cada película, con más detalles sobre cada una.
-
-La lista debe tener almenos 50 elementos, pero no tiene límite superior (excepto la capacidad del navegador para mostrar la página, que es enorme).
-
-Recomendaciones:
-- Hacer-se una chuleta (escrita a mano!) de las técnicas necesarias antes de empezar: leer JSON, usar `fetch` de forma asíncrona, crear una clase en Typescript, convertir una lista de objetos genéricos a objetos de la clase, generar HTML usando datos, etc. El programa proporcionado es un buen material de estudio de esas técnicas.
-- Ir por pasos en la implementación (tener siempre algo funcionando, que se va ampliando commit por commit): primero leer datos de la API (y mostrar en consola), luego crear clases que los almacenan (y mostrar de nuevo en consola), luego generar una página sencillísima (y visualizarla con un navegador), luego irla ampliando, y finalmente poner estilos en CSS.
-
-## Entregable
-
-Para hacer esta práctica hay que:
-- Hacer un fork de este repositorio.
-- Trabajar en el *fork* haciendo commits regularmente (una práctica que aparece entera en un solo commit tendrá una nota muy baja o cero, hay que enseñar el proceso intermedio).
-- Al finalizar, se debe descargar un ZIP y entregar en el Campus Online de UPC School (habrá una tarea para ello).
-
-**Muy importante**: la solución debe sustituir el código original (no debe quedar rastro, ni nombres, ni nada de nada). Si bien el ejemplo puede contener partes reaprovechables, se recomienda empezar _desde cero_ (ya que eso produce un aprendizaje de mucha más profundidad).
+Generador que utiliza TypeScript y se encarga de generar un sitio web estático que muestra una lista de películas populares y sus detalles. Obtiene la información de las películas desde la API de The Movie Database (TMDb) y crea un archivo HTML principal con una lista de películas y archivos HTML individuales para cada película con más detalles. 
 
 **To run**:
 
@@ -27,6 +8,14 @@ bun run main.ts
 
 **Nuevas Funcionalidades**
 
-- [x] Información de provedores de streaming donde se pueda ver la película (API Just Watch)
+- [] Información de provedores de streaming donde se pueda ver la película (API Just Watch)
+
+_"Integrar con plataformas de streaming en españa: enlaces a plataformas de streaming (como Netflix, Movistar, hbo, Amazon Prime... ) donde el usuario pueda ver la película"_
+
+[UPDATE]: La [API de Just Watch](https://www.justwatch.com/us/JustWatch-Streaming-API) no esta abierta, ni gratuita, con la API que se habia usado de The Movie Database API como es partnership de JustWatch puedes conseguir la información de proovedores de servicios físicos y en streaming que operan en cada pais para poder ver la película [TMDB Movie Watch Providers API](https://developers.themoviedb.org/3/movies/get-movie-watch-providers). 
+
+El tema es que no se puede obtener el enlace directo a la plataforma desde la API de TMDB, eso lo tiene capado Just Watch, entiendo que por modelo de negocio, les interesa que pases por su página Web. 
+
 - [] Paginación
 
+_"Permitir al usuario navegar a través de varias páginas de películas, en lugar de mostrar solo las películas más populares en una sola página."_
