@@ -36,15 +36,6 @@
     "watchProvidersES": []
   },
   {
-    "id": 700391,
-    "title": "65",
-    "release_date": "2023-03-02",
-    "director": "Scott Beck",
-    "poster_path": "/rzRb63TldOKdKydCvWJM8B6EkPM.jpg",
-    "overview": "65 million years ago, the only 2 survivors of a spaceship from Somaris that crash-landed on Earth must fend off dinosaurs and reach the escape vessel in time before an imminent asteroid strike threatens to destroy the planet.",
-    "watchProvidersES": []
-  },
-  {
     "id": 638974,
     "title": "Murder Mystery 2",
     "release_date": "2023-03-28",
@@ -67,97 +58,21 @@
     ]
   },
   {
-    "id": 315162,
-    "title": "Puss in Boots: The Last Wish",
-    "release_date": "2022-12-07",
-    "director": "Joel Crawford",
-    "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
-    "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+    "id": 640146,
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "release_date": "2023-02-15",
+    "director": "Peyton Reed",
+    "poster_path": "/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg",
+    "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
     "watchProvidersES": []
   },
   {
-    "id": 758323,
-    "title": "The Pope's Exorcist",
-    "release_date": "2023-04-05",
-    "director": "Julius Avery",
-    "poster_path": "/9JBEPLTPSm0d1mbEcLxULjJq9Eh.jpg",
-    "overview": "Father Gabriele Amorth, Chief Exorcist of the Vatican, investigates a young boy's terrifying possession and ends up uncovering a centuries-old conspiracy the Vatican has desperately tried to keep hidden.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 603692,
-    "title": "John Wick: Chapter 4",
-    "release_date": "2023-03-22",
-    "director": "Chad Stahelski",
-    "poster_path": "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
-    "overview": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 804150,
-    "title": "Cocaine Bear",
-    "release_date": "2023-02-22",
-    "director": "Elizabeth Banks",
-    "poster_path": "/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg",
-    "overview": "Inspired by a true story, an oddball group of cops, criminals, tourists and teens converge in a Georgia forest where a 500-pound black bear goes on a murderous rampage after unintentionally ingesting cocaine.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 816904,
-    "title": "Mummies",
-    "release_date": "2023-01-05",
-    "director": "Juan Jesús García Galocha",
-    "poster_path": "/qVdrYN8qu7xUtsdEFeGiIVIaYd.jpg",
-    "overview": "Through a series of unfortunate events, three mummies end up in present-day London and embark on a wacky and hilarious journey in search of an old ring belonging to the Royal Family, stolen by ambitious archaeologist Lord Carnaby.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 849869,
-    "title": "Kill Boksoon",
-    "release_date": "2023-02-17",
-    "director": "Byun Sung-hyun",
-    "poster_path": "/taYgn3RRpCGlTGdaGQvnSIOzXFy.jpg",
-    "overview": "At work, she's a renowned assassin. At home, she's a single mom to a teenage daughter. Killing? That's easy. It's parenting that's the hard part.",
-    "watchProvidersES": [
-      {
-        "logo_path": "/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg",
-        "provider_id": 8,
-        "provider_name": "Netflix",
-        "display_priority": 0
-      },
-      {
-        "logo_path": "/mShqQVDhHoK7VUbfYG3Un6xE8Mv.jpg",
-        "provider_id": 1796,
-        "provider_name": "Netflix basic with Ads",
-        "display_priority": 67
-      }
-    ]
-  },
-  {
-    "id": 980078,
-    "title": "Winnie the Pooh: Blood and Honey",
-    "release_date": "2023-01-27",
-    "director": "Rhys Frake-Waterfield",
-    "poster_path": "/fNTtVbqI92abEKAgz2ynurCUne.jpg",
-    "overview": "Christopher Robin is headed off to college and he has abandoned his old friends, Pooh and Piglet, which then leads to the duo embracing their inner monsters.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 1033219,
-    "title": "Attack on Titan",
-    "release_date": "2022-09-30",
-    "director": "Noah Luke",
-    "poster_path": "/qNz4l8UgTkD8rlqiKZ556pCJ9iO.jpg",
-    "overview": "As viable water is depleted on Earth, a mission is sent to Saturn's moon Titan to retrieve sustainable H2O reserves from its alien inhabitants. But just as the humans acquire the precious resource, they are attacked by Titan rebels, who don't trust that the Earthlings will leave in peace.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 676841,
-    "title": "Unhappily Ever After",
-    "release_date": "2023-01-26",
-    "director": "Noé Santillán-López",
-    "poster_path": "/qiAM7Y8xF8wJDDsjeSuLgzyFGmd.jpg",
-    "overview": "María José and Alfredo are about to celebrate their 20th anniversary and their children give them a trip to the hotel where they celebrated their honeymoon, but a spell will make them repeat the same day.",
+    "id": 700391,
+    "title": "65",
+    "release_date": "2023-03-02",
+    "director": "Scott Beck",
+    "poster_path": "/rzRb63TldOKdKydCvWJM8B6EkPM.jpg",
+    "overview": "65 million years ago, the only 2 survivors of a spaceship from Somaris that crash-landed on Earth must fend off dinosaurs and reach the escape vessel in time before an imminent asteroid strike threatens to destroy the planet.",
     "watchProvidersES": []
   },
   {
@@ -183,6 +98,80 @@
     ]
   },
   {
+    "id": 315162,
+    "title": "Puss in Boots: The Last Wish",
+    "release_date": "2022-12-07",
+    "director": "Joel Crawford",
+    "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+    "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+    "watchProvidersES": [
+      {
+        "logo_path": "/4ywRQTLYJk8CjroNX4FbCBDQZTr.jpg",
+        "provider_id": 149,
+        "provider_name": "Movistar Plus",
+        "display_priority": 10
+      }
+    ]
+  },
+  {
+    "id": 603692,
+    "title": "John Wick: Chapter 4",
+    "release_date": "2023-03-22",
+    "director": "Chad Stahelski",
+    "poster_path": "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+    "overview": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+    "watchProvidersES": []
+  },
+  {
+    "id": 849869,
+    "title": "Kill Boksoon",
+    "release_date": "2023-02-17",
+    "director": "Byun Sung-hyun",
+    "poster_path": "/taYgn3RRpCGlTGdaGQvnSIOzXFy.jpg",
+    "overview": "At work, she's a renowned assassin. At home, she's a single mom to a teenage daughter. Killing? That's easy. It's parenting that's the hard part.",
+    "watchProvidersES": [
+      {
+        "logo_path": "/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg",
+        "provider_id": 8,
+        "provider_name": "Netflix",
+        "display_priority": 0
+      },
+      {
+        "logo_path": "/mShqQVDhHoK7VUbfYG3Un6xE8Mv.jpg",
+        "provider_id": 1796,
+        "provider_name": "Netflix basic with Ads",
+        "display_priority": 67
+      }
+    ]
+  },
+  {
+    "id": 758323,
+    "title": "The Pope's Exorcist",
+    "release_date": "2023-04-05",
+    "director": "Julius Avery",
+    "poster_path": "/9JBEPLTPSm0d1mbEcLxULjJq9Eh.jpg",
+    "overview": "Father Gabriele Amorth, Chief Exorcist of the Vatican, investigates a young boy's terrifying possession and ends up uncovering a centuries-old conspiracy the Vatican has desperately tried to keep hidden.",
+    "watchProvidersES": []
+  },
+  {
+    "id": 804150,
+    "title": "Cocaine Bear",
+    "release_date": "2023-02-22",
+    "director": "Elizabeth Banks",
+    "poster_path": "/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg",
+    "overview": "Inspired by a true story, an oddball group of cops, criminals, tourists and teens converge in a Georgia forest where a 500-pound black bear goes on a murderous rampage after unintentionally ingesting cocaine.",
+    "watchProvidersES": []
+  },
+  {
+    "id": 1008005,
+    "title": "The Communion Girl",
+    "release_date": "2023-02-10",
+    "director": "Víctor García",
+    "poster_path": "/sP6AO11a7jWgsmT9T8j9EGIWAaZ.jpg",
+    "overview": "Spain, late 1980s. Newcomer Sara tries to fit in with the other teens in this tight-knit small town in the province of Tarragona. If only she were more like her extroverted best friend, Rebe. They go out one night at a nightclub, on the way home, they come upon a little girl holding a doll, dressed for her first communion. And that's when the nightmare begins.",
+    "watchProvidersES": []
+  },
+  {
     "id": 842945,
     "title": "Supercell",
     "release_date": "2023-03-17",
@@ -192,30 +181,55 @@
     "watchProvidersES": []
   },
   {
-    "id": 1084225,
-    "title": "The Park",
-    "release_date": "2023-03-02",
-    "director": "Shal Ngo",
-    "poster_path": "/hR1jdCw0A9czgsbp45TASkjjBhA.jpg",
-    "overview": "A dystopian coming-of-age movie focused on three kids who find themselves in an abandoned amusement park, aiming to unite whoever remains. With dangers lurking around every corner, they will do whatever it takes to survive their hellish Neverland.",
+    "id": 816904,
+    "title": "Mummies",
+    "release_date": "2023-01-05",
+    "director": "Juan Jesús García Galocha",
+    "poster_path": "/qVdrYN8qu7xUtsdEFeGiIVIaYd.jpg",
+    "overview": "Through a series of unfortunate events, three mummies end up in present-day London and embark on a wacky and hilarious journey in search of an old ring belonging to the Royal Family, stolen by ambitious archaeologist Lord Carnaby.",
     "watchProvidersES": []
   },
   {
-    "id": 984105,
-    "title": "The Mummy Resurrection",
-    "release_date": "2023-01-02",
-    "director": "Steven Lawson",
-    "poster_path": "/d0pt6KlVvmtG0uhccWjgWfIqJee.jpg",
-    "overview": "When an infamous \"cursed\" Egyptian sarcophagus falls into the hands of unscrupulous huckster Everett Randolph, he becomes obsessed with resurrecting the mummified princess held within it.",
+    "id": 1033219,
+    "title": "Attack on Titan",
+    "release_date": "2022-09-30",
+    "director": "Noah Luke",
+    "poster_path": "/qNz4l8UgTkD8rlqiKZ556pCJ9iO.jpg",
+    "overview": "As viable water is depleted on Earth, a mission is sent to Saturn's moon Titan to retrieve sustainable H2O reserves from its alien inhabitants. But just as the humans acquire the precious resource, they are attacked by Titan rebels, who don't trust that the Earthlings will leave in peace.",
     "watchProvidersES": []
   },
   {
-    "id": 1023313,
-    "title": "The Exorcist",
-    "release_date": "2022-11-02",
-    "director": "Adrián García Bogliano",
-    "poster_path": "/d07xtqwq1uriQ1hda6qeu8Skt5m.jpg",
-    "overview": "Ophelia, a young nun recently arriving in the town of San Ramon, is forced to perform an exorcism on a pregnant woman in danger of dying. Just when she thinks her possession has ended, she discovers that the evil presence hasn't disappeared yet. The director of the award-winning Here Comes the Devil and Late Phases adds a new twist to possession movies in one of this year's Latin American horror surprises.",
+    "id": 1104040,
+    "title": "Gangs of Lagos",
+    "release_date": "2023-04-07",
+    "director": "Jadesola Osiberu",
+    "poster_path": "/nGwFsB6EXUCr21wzPgtP5juZPSv.jpg",
+    "overview": "A group of friends who each have to navigate their own destiny, growing up on the bustling streets and neighborhood of Isale Eko, Lagos.",
+    "watchProvidersES": [
+      {
+        "logo_path": "/emthp39XA2YScoYL1p0sdbAH2WA.jpg",
+        "provider_id": 119,
+        "provider_name": "Amazon Prime Video",
+        "display_priority": 1
+      }
+    ]
+  },
+  {
+    "id": 713704,
+    "title": "Evil Dead Rise",
+    "release_date": "2023-04-12",
+    "director": "Lee Cronin",
+    "poster_path": "/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
+    "overview": "Two sisters find an ancient vinyl that gives birth to bloodthirsty demons that run amok in a Los Angeles apartment building and thrusts them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
+    "watchProvidersES": []
+  },
+  {
+    "id": 980078,
+    "title": "Winnie the Pooh: Blood and Honey",
+    "release_date": "2023-01-27",
+    "director": "Rhys Frake-Waterfield",
+    "poster_path": "/ewF3IlGscc7FjgGEPcQvZsAsgAW.jpg",
+    "overview": "Christopher Robin is headed off to college and he has abandoned his old friends, Pooh and Piglet, which then leads to the duo embracing their inner monsters.",
     "watchProvidersES": []
   }
 ]

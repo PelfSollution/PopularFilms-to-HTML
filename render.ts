@@ -13,13 +13,13 @@ const renderFilmCard = (film: Film): string => {
   const director = createParagraph("Director", film.director);
 
   const hasWatchProviders = film.watchProvidersES.length > 0;
-  const filmTitleClass = hasWatchProviders ? "film-title with-providers" : "film-title";
+  const providerCircleCheck = hasWatchProviders ? "film-title check-providers" : "film-title";
 
 
  return `
     <div class="film-card">
       <img src="${film.getImageUrl()}" alt="${film.title}" />
-      <h2 class="${filmTitleClass}">${film.title}</h2>
+      <h2><span class="${providerCircleCheck}" title="para ver en línea"></span>${film.title}</h2>
       ${fechaLanzamiento}
       ${director}
       <a href="films/film-${film.id}.html">Detalles</a>

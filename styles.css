@@ -136,8 +136,15 @@ h1 {
 
 
 
-.film-title.with-providers {
-  color: #0070f3; /* Cambia este valor al color que desees */
+.film-title.check-providers {
+  display: inline-block;
+  width: 10px; 
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 5px;
+  margin-bottom:5px;
+  vertical-align: middle;
 }
 
 
