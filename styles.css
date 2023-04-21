@@ -56,7 +56,7 @@ h1 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 20px -8px rgba(0,0,0,0.55);
+  box-shadow: 2px 2px 20px -8px rgba(0, 0, 0, 0.55);
 }
 
 .film-card-interior {
@@ -66,7 +66,7 @@ h1 {
   padding: 1rem;
   width: 90%;
   box-sizing: border-box;
-  box-shadow: 2px 2px 20px -8px rgba(0,0,0,0.55);
+  box-shadow: 2px 2px 20px -8px rgba(0, 0, 0, 0.55);
 }
 
 .film-card img,
@@ -87,7 +87,6 @@ h1 {
 .film-card p,
 .film-card-interior p {
   margin: 0;
-  padding: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -134,24 +133,25 @@ h1 {
   }
 }
 
-
-
 .film-title.check-providers {
   display: inline-block;
-  width: 10px; 
+  width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: green;
   margin-right: 5px;
-  margin-bottom:5px;
+  margin-bottom: 5px;
   vertical-align: middle;
 }
 
-
-
-.logo{
+.logo {
   max-width: 50px;
   margin: 5px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.5;
 }
 
 .watch-providers ul {
@@ -170,7 +170,19 @@ h1 {
 }
 
 .aviso-providers{
-  background-color: #5f6368;
-  color:#fff;
-  font-size: 16px;
+  background-color: #ddd;
+  color: #000;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.circulo-rojo{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ea4435;
+  margin-right: 8px;
+
 }
