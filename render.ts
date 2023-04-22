@@ -8,6 +8,31 @@ function createParagraph(title: string, content: string): string {
   `;
 }
 
+function getSearchUrl(providerName: string, filmTitle: string): string {
+  const encodedTitle = encodeURIComponent(filmTitle);
+  if (providerName.toLowerCase().includes("netflix")) {
+    return `https://www.netflix.com/search?q=${encodedTitle}`;
+  } else if (providerName.toLowerCase().includes("hbo")) {
+    return `https://www.hbomax.com/search?q=${encodedTitle}`;
+  } else if (
+    providerName.toLowerCase().includes("amazon") ||
+    providerName.toLowerCase().includes("prime")
+  ) {
+    return `https://www.amazon.es/s?k=${encodedTitle}&i=instant-video`;
+  } else if (
+    providerName.toLowerCase().includes("apple") ||
+    providerName.toLowerCase().includes("appletv")
+  ) {
+    return `https://tv.apple.com/search?q=${encodedTitle}`;
+  } else if (providerName.toLowerCase().includes("movistar")) {
+    return `https://ver.movistarplus.es/busqueda/?q=${encodedTitle}`;
+  } else {
+    return `https://www.google.com/search?q=${encodeURIComponent(
+      providerName
+    )}+${encodedTitle}`;
+  }
+}
+
 const renderFilmCard = (film: Film): string => {
   const fechaLanzamiento = createParagraph(
     "Fecha de lanzamiento",
@@ -42,31 +67,7 @@ const renderFilmDetails = (film: Film): string => {
 
   const watchProvidersList = film.watchProvidersES
     .map((provider) => {
-      const providerName = provider.provider_name;
-      const filmTitle = film.title;
-      const encodedTitle = encodeURIComponent(filmTitle);
-      let searchUrl = "";
-      if (providerName.toLowerCase().includes("netflix")) {
-        searchUrl = `https://www.netflix.com/search?q=${encodedTitle}`;
-      } else if (providerName.toLowerCase().includes("hbo")) {
-        searchUrl = `https://www.hbomax.com/search?q=${encodedTitle}`;
-      } else if (
-        providerName.toLowerCase().includes("amazon") ||
-        providerName.toLowerCase().includes("prime")
-      ) {
-        searchUrl = `https://www.amazon.es/s?k=${encodedTitle}&i=instant-video`;
-      } else if (
-        providerName.toLowerCase().includes("apple") ||
-        providerName.toLowerCase().includes("appletv")
-      ) {
-        searchUrl = `https://tv.apple.com/search?q=${encodedTitle}`;
-      } else if (providerName.toLowerCase().includes("movistar")) {
-        searchUrl = `https://ver.movistarplus.es/busqueda/?q=${encodedTitle}`;
-      } else {
-        searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
-          providerName
-        )}+${encodedTitle}`;
-      }
+      const searchUrl = getSearchUrl(provider.provider_name, film.title);
 
       return `<li><img class="logo" src="${provider.getImageLogo()}" alt="${
         provider.provider_name
@@ -86,11 +87,17 @@ const renderFilmDetails = (film: Film): string => {
       </ul>
     </div>`
       : `<p class="aviso-providers"><span class="circulo-rojo"></span>No se encontraron proveedores de transmisión en línea en España para esta película.</p>`;
-
+      const hasWatchProviders = film.watchProvidersES.length > 0;
+  const providerCircleCheck = hasWatchProviders
+    ? "film-title check-providers"
+    : "film-title";
+    
   return `
     <div class="film-card-interior">
       <img src="${film.getImageUrl()}" alt="${film.title}">
-      <h2>${film.title}</h2>
+      <h2><span class="${providerCircleCheck}" title="para ver en línea"></span>${
+        film.title
+      }</h2>
       ${fechaLanzamiento}
       ${director}
       <p>${film.overview}</p>
