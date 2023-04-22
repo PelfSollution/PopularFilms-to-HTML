@@ -21,7 +21,7 @@ El tema es que no se puede obtener el enlace directo a la plataforma desde la AP
 
  El código verifica si el nombre del proveedor incluye palabras clave como "netflix", "hbo", "amazon", "prime", etc o finalmente en google, y luego construye la URL de búsqueda correspondiente a la  plataforma utilizando el título codificado de la película. La solución es más o menos efectiva si deseas realizar búsquedas básicas en diferentes plataformas de streaming sin depender de la API de JustWatch.
 
-- [] Paginación
+- [x] Paginación
 
 _"Permitir al usuario navegar a través de varias páginas de películas, en lugar de mostrar solo las películas más populares en una sola página."_
 

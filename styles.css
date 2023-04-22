@@ -110,28 +110,7 @@ h1 {
   color: #3a7cd6;
 }
 
-@media screen and (max-width: 767px) {
-  .film-card {
-    width: 100%;
-    max-width: 100%;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .film-card {
-    width: 100%;
-    max-width: 48%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .film-card {
-    width: 100%;
-    max-width: 30%;
-  }
-}
+/*PROOVEDORES DE STREAMING*/
 
 .film-title.check-providers {
   display: inline-block;
@@ -169,7 +148,7 @@ h1 {
   padding-bottom: 0;
 }
 
-.aviso-providers{
+.aviso-providers {
   background-color: #ddd;
   color: #000;
   font-size: 14px;
@@ -177,12 +156,112 @@ h1 {
   border-radius: 5px;
 }
 
-.circulo-rojo{
+.circulo-rojo {
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #ea4435;
   margin-right: 8px;
+}
 
+/*PAGINACION*/
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination a,
+.pagination .current-page {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5f6368;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  background-color: #e9f0fe;
+  color: #3a7cd6;
+}
+
+.pagination .current-page {
+  color: #3a7cd6;
+  background-color: #e8f0fe;
+  cursor: default;
+}
+
+/*TOOLTIP*/
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: hidden;
+  font-size: 12px;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border: #000000 1px solid;
+  box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 0;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 767px) {
+  .film-card {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .film-card {
+    width: 100%;
+    max-width: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .film-card {
+    width: 100%;
+    max-width: 30%;
+  }
 }
