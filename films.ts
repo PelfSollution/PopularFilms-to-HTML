@@ -50,9 +50,9 @@ async function getFilmDetails(movieId: number, apiKey: string): Promise<{ direct
 }
 
 
-export const loadFilms = async (n: number, page: number) => {
+export const loadFilms = async (page: number, n:number) => {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=1`
+    `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`
   );
   const { results } = (await response.json()) as { results: any[] };
   const films: Array<Film> = [];

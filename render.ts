@@ -66,16 +66,16 @@ const renderFilmDetails = (film: Film): string => {
   const director = createParagraph("Director", film.director);
 
   const watchProvidersList = film.watchProvidersES
-    .map((provider) => {
-      const searchUrl = getSearchUrl(provider.provider_name, film.title);
+  .map((provider) => {
+    const searchUrl = getSearchUrl(provider.provider_name, film.title);
 
-      return `<li><img class="logo" src="${provider.getImageLogo()}" alt="${
-        provider.provider_name
-      }" title="${
-        provider.provider_name
-      }" onclick="window.open('${searchUrl}', '_blank')"></li>`;
-    })
-    .join("");
+    return `<li><div class="tooltip"><img class="logo" src="${provider.getImageLogo()}" alt="${
+      provider.provider_name
+    }"  onclick="window.open('${searchUrl}', '_blank')"><span class="tooltiptext">${
+      provider.provider_name
+    }</span></div></li>`;
+  })
+  .join("");
 
   const watchProvidersSection =
     watchProvidersList.length > 0
@@ -91,7 +91,7 @@ const renderFilmDetails = (film: Film): string => {
   const providerCircleCheck = hasWatchProviders
     ? "film-title check-providers"
     : "film-title";
-    
+
   return `
     <div class="film-card-interior">
       <img src="${film.getImageUrl()}" alt="${film.title}">
@@ -107,8 +107,23 @@ const renderFilmDetails = (film: Film): string => {
   `;
 };
 
-export function renderList(films: Film[]): string {
+export function renderList(films: Film[], currentPage: number, totalPages: number): string {
   const filmCards = films.map(renderFilmCard).join("");
+
+  const paginationLinks:string[] = [];
+  for (let i = 1; i <= totalPages; i++) {
+    if (i === currentPage) {
+      paginationLinks.push(`<span class="current-page">${i}</span>`);
+    } else {
+      const fileName = i === 1 ? "index.html" : `index${i}.html`;
+      paginationLinks.push(`<a href="${fileName}">${i}</a>`);
+    }
+  }
+  const pagination = `
+    <div class="pagination">
+      ${paginationLinks.join("")}
+    </div>
+  `;
 
   return `
     <!DOCTYPE html>
@@ -117,6 +132,7 @@ export function renderList(films: Film[]): string {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Listado de películas</title>
+        <link rel="icon" href="img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="styles.css" />
       </head>
       <body>
@@ -127,6 +143,7 @@ export function renderList(films: Film[]): string {
           <div class="film-container">
             ${filmCards}
           </div>
+          ${pagination}
         </main>
       </body>
     </html>
@@ -143,6 +160,7 @@ export function renderDetails(film: Film): string {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>${film.title}</title>
+        <link rel="icon" href="../img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="../styles.css" />
       </head>
       <body>

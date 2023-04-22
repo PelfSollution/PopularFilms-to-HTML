@@ -24,3 +24,7 @@ El tema es que no se puede obtener el enlace directo a la plataforma desde la AP
 - [] Paginación
 
 _"Permitir al usuario navegar a través de varias páginas de películas, en lugar de mostrar solo las películas más populares en una sola página."_
+
+Problemas ya que la API [solo permite 20 peliculas por página](https://www.themoviedb.org/talk/623012ed357c00001b46ae10), asi que con esta API debere hacer paginación para ir cargando cada vez 20 películas.
+
+[UPDATE]: Para la páginacion y poder cargar más de 20 películas, se hace un bucle, en cada iteracion se llama a la funcion `loadFilms` y se renderiza ese bloque los listados de 20 películas más populares, la primera index.html y las siguientes en `index{número_página}.html` y añadiendo los las peliculas en bloque en el array `allFilms` con `concat`. Cuando acaba se ejecuta una promesa para procesar los detalles de cada pelicula del array de forma asíncrona.
