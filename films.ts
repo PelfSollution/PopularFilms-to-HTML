@@ -14,7 +14,6 @@ export class Film {
   getImageUrl(): string {
     return `https://image.tmdb.org/t/p/w500${this.poster_path}`;
   }
-
 }
 
 export class WatchProvider {
@@ -30,23 +29,35 @@ export class WatchProvider {
   }
 }
 
-  //la forma que he encontrado para obtener el director es con otra llamada a la api a la pagina credits
-  async function getDirector(movieId: number, apiKey: string): Promise<string> {
-    const creditsUrl = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${apiKey}`;
-    const response = await fetch(creditsUrl);
-    const { crew } = await response.json();
-    const director = crew.find((member: any) => member.job === 'Director');
-    return director ? director.name : 'Director no disponible';
-  }
+//la forma que he encontrado para obtener el director es con otra llamada a la api a la pagina credits
+async function getDirector(movieId: number, apiKey: string): Promise<string> {
+  const creditsUrl = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${apiKey}`;
+  const response = await fetch(creditsUrl);
+  const { crew } = await response.json();
+  const director = crew.find((member: any) => member.job === "Director");
+  return director ? director.name : "Director no disponible";
+}
 
-  async function getWatchProviders(movieId: number, apiKey: string): Promise<WatchProvider[]> {
-    const url = `https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${apiKey}`;
-    const response = await fetch(url);
-    const data = await response.json();
-    const watchProvidersES = data?.results?.ES?.flatrate;
-    return watchProvidersES ? watchProvidersES.map((provider: any) => new WatchProvider(provider.logo_path, provider.provider_id, provider.provider_name, provider.display_priority)) : [];
-  
-  }
+async function getWatchProviders(
+  movieId: number,
+  apiKey: string
+): Promise<WatchProvider[]> {
+  const url = `https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${apiKey}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  const watchProvidersES = data?.results?.ES?.flatrate;
+  return watchProvidersES
+    ? watchProvidersES.map(
+        (provider: any) =>
+          new WatchProvider(
+            provider.logo_path,
+            provider.provider_id,
+            provider.provider_name,
+            provider.display_priority
+          )
+      )
+    : [];
+}
 
 export const loadFilms = async (n: number) => {
   const response = await fetch(
@@ -54,17 +65,19 @@ export const loadFilms = async (n: number) => {
   );
   const { results } = (await response.json()) as { results: any[] };
   const films: Array<Film> = [];
-  for (const {
-    id,
-    title,
-    release_date,
-    poster_path,
-    overview,
-  } of results) {
+  for (const { id, title, release_date, poster_path, overview } of results) {
     const director = await getDirector(id, apiKey);
     const watchProvidersES = await getWatchProviders(id, apiKey);
     films.push(
-      new Film(id, title, release_date, director, poster_path, overview, watchProvidersES)
+      new Film(
+        id,
+        title,
+        release_date,
+        director,
+        poster_path,
+        overview,
+        watchProvidersES
+      )
     );
   }
   return films;
@@ -75,10 +88,14 @@ async function main() {
   try {
     const films = await loadFilms(1);
     console.log(films);
-    await writeFile('providersES.json', JSON.stringify(films, null, 2), 'utf-8');
-    console.log('JSON guardado');
+    await writeFile(
+      "providersES.json",
+      JSON.stringify(films, null, 2),
+      "utf-8"
+    );
+    console.log("JSON guardado");
   } catch (error) {
-    console.error('Error al cargar las películas:', error);
+    console.error("Error al cargar las películas:", error);
   }
 }
 
