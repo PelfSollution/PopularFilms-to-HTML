@@ -212,18 +212,19 @@ h1 {
   visibility: hidden;
   font-size: 12px;
   width: 120px;
-  background-color: black;
-  color: #fff;
+  background-color: #e8f0fe;
+  color: #3a7cd6;
   text-align: center;
-  border: #000000 1px solid;
+  border: #e8f0fe 1px solid;
+  border-radius: 5px;
   box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 90%;
+  top: 95%;
   left: 50%;
   margin-left: -60px;
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .tooltip .tooltiptext::after {
@@ -234,7 +235,7 @@ h1 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent black transparent;
+  border-color: transparent transparent #e8f0fe transparent;
 }
 
 .tooltip:hover .tooltiptext {

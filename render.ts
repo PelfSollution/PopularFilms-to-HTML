@@ -48,7 +48,7 @@ const renderFilmCard = (film: Film): string => {
   return `
     <div class="film-card">
       <img src="${film.getImageUrl()}" alt="${film.title}" />
-      <h2><span class="${providerCircleCheck}" title="para ver en línea"></span>${
+      <h2><span class="${providerCircleCheck} tooltip"><span class="tooltiptext">ya en Streaming!</span></span>${
     film.title
   }</h2>
       ${fechaLanzamiento}
@@ -95,9 +95,9 @@ const renderFilmDetails = (film: Film): string => {
   return `
     <div class="film-card-interior">
       <img src="${film.getImageUrl()}" alt="${film.title}">
-      <h2><span class="${providerCircleCheck}" title="para ver en línea"></span>${
+      <h2><div class="tooltip"><span class="${providerCircleCheck} tooltip"><span class="tooltiptext">ya en Streaming!</span></span>${
         film.title
-      }</h2>
+      }</div></h2>
       ${fechaLanzamiento}
       ${director}
       <p>${film.overview}</p>
