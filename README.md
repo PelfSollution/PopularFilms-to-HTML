@@ -2,11 +2,11 @@
 
 Generador que utiliza TypeScript y se encarga de generar un sitio web estático que muestra una lista de películas populares y sus detalles. Obtiene la información de las películas desde la API de The Movie Database (TMDb) y crea un archivo HTML principal con una lista de películas y archivos HTML individuales para cada película con más detalles. 
 
-**To run**:
+## Run
 
-bun run main.ts
+- `bun run main.ts`
 
-**Nuevas Funcionalidades**
+## Nuevas Funcionalidades
 
 - [] Información de provedores de streaming donde se pueda ver la película (API Just Watch)
 
