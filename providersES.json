@@ -27,6 +27,15 @@
     "watchProvidersES": []
   },
   {
+    "id": 640146,
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "release_date": "2023-02-15",
+    "director": "Peyton Reed",
+    "poster_path": "/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg",
+    "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
+    "watchProvidersES": []
+  },
+  {
     "id": 677179,
     "title": "Creed III",
     "release_date": "2023-03-01",
@@ -42,46 +51,6 @@
     "director": "Jeremy Garelick",
     "poster_path": "/s1VzVhXlqsevi8zeCMG9A16nEUf.jpg",
     "overview": "After starting their own detective agency, Nick and Audrey Spitz land a career-making case when their billionaire pal is kidnapped from his wedding.",
-    "watchProvidersES": [
-      {
-        "logo_path": "/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg",
-        "provider_id": 8,
-        "provider_name": "Netflix",
-        "display_priority": 0
-      },
-      {
-        "logo_path": "/mShqQVDhHoK7VUbfYG3Un6xE8Mv.jpg",
-        "provider_id": 1796,
-        "provider_name": "Netflix basic with Ads",
-        "display_priority": 67
-      }
-    ]
-  },
-  {
-    "id": 640146,
-    "title": "Ant-Man and the Wasp: Quantumania",
-    "release_date": "2023-02-15",
-    "director": "Peyton Reed",
-    "poster_path": "/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg",
-    "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 700391,
-    "title": "65",
-    "release_date": "2023-03-02",
-    "director": "Scott Beck",
-    "poster_path": "/rzRb63TldOKdKydCvWJM8B6EkPM.jpg",
-    "overview": "65 million years ago, the only 2 survivors of a spaceship from Somaris that crash-landed on Earth must fend off dinosaurs and reach the escape vessel in time before an imminent asteroid strike threatens to destroy the planet.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 736790,
-    "title": "Chupa",
-    "release_date": "2023-04-07",
-    "director": "Jonás Cuarón",
-    "poster_path": "/ra3xm8KFAkwK0CdbPRkfYADJYTB.jpg",
-    "overview": "While visiting family in Mexico, a lonely boy befriends a mythical creature hiding on his grandfather's ranch and embarks on the adventure of a lifetime.",
     "watchProvidersES": [
       {
         "logo_path": "/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg",
@@ -114,12 +83,21 @@
     ]
   },
   {
-    "id": 603692,
-    "title": "John Wick: Chapter 4",
-    "release_date": "2023-03-22",
-    "director": "Chad Stahelski",
-    "poster_path": "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
-    "overview": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+    "id": 1008005,
+    "title": "The Communion Girl",
+    "release_date": "2023-02-10",
+    "director": "Víctor García",
+    "poster_path": "/sP6AO11a7jWgsmT9T8j9EGIWAaZ.jpg",
+    "overview": "Spain, late 1980s. Newcomer Sara tries to fit in with the other teens in this tight-knit small town in the province of Tarragona. If only she were more like her extroverted best friend, Rebe. They go out one night at a nightclub, on the way home, they come upon a little girl holding a doll, dressed for her first communion. And that's when the nightmare begins.",
+    "watchProvidersES": []
+  },
+  {
+    "id": 700391,
+    "title": "65",
+    "release_date": "2023-03-02",
+    "director": "Scott Beck",
+    "poster_path": "/rzRb63TldOKdKydCvWJM8B6EkPM.jpg",
+    "overview": "65 million years ago, the only 2 survivors of a spaceship from Somaris that crash-landed on Earth must fend off dinosaurs and reach the escape vessel in time before an imminent asteroid strike threatens to destroy the planet.",
     "watchProvidersES": []
   },
   {
@@ -145,13 +123,51 @@
     ]
   },
   {
-    "id": 758323,
-    "title": "The Pope's Exorcist",
-    "release_date": "2023-04-05",
-    "director": "Julius Avery",
-    "poster_path": "/9JBEPLTPSm0d1mbEcLxULjJq9Eh.jpg",
-    "overview": "Father Gabriele Amorth, Chief Exorcist of the Vatican, investigates a young boy's terrifying possession and ends up uncovering a centuries-old conspiracy the Vatican has desperately tried to keep hidden.",
+    "id": 1104040,
+    "title": "Gangs of Lagos",
+    "release_date": "2023-04-07",
+    "director": "Jadesola Osiberu",
+    "poster_path": "/nGwFsB6EXUCr21wzPgtP5juZPSv.jpg",
+    "overview": "A group of friends who each have to navigate their own destiny, growing up on the bustling streets and neighborhood of Isale Eko, Lagos.",
+    "watchProvidersES": [
+      {
+        "logo_path": "/emthp39XA2YScoYL1p0sdbAH2WA.jpg",
+        "provider_id": 119,
+        "provider_name": "Amazon Prime Video",
+        "display_priority": 1
+      }
+    ]
+  },
+  {
+    "id": 603692,
+    "title": "John Wick: Chapter 4",
+    "release_date": "2023-03-22",
+    "director": "Chad Stahelski",
+    "poster_path": "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+    "overview": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
     "watchProvidersES": []
+  },
+  {
+    "id": 736790,
+    "title": "Chupa",
+    "release_date": "2023-04-07",
+    "director": "Jonás Cuarón",
+    "poster_path": "/ra3xm8KFAkwK0CdbPRkfYADJYTB.jpg",
+    "overview": "While visiting family in Mexico, a lonely boy befriends a mythical creature hiding on his grandfather's ranch and embarks on the adventure of a lifetime.",
+    "watchProvidersES": [
+      {
+        "logo_path": "/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg",
+        "provider_id": 8,
+        "provider_name": "Netflix",
+        "display_priority": 0
+      },
+      {
+        "logo_path": "/mShqQVDhHoK7VUbfYG3Un6xE8Mv.jpg",
+        "provider_id": 1796,
+        "provider_name": "Netflix basic with Ads",
+        "display_priority": 67
+      }
+    ]
   },
   {
     "id": 804150,
@@ -163,12 +179,21 @@
     "watchProvidersES": []
   },
   {
-    "id": 1008005,
-    "title": "The Communion Girl",
-    "release_date": "2023-02-10",
-    "director": "Víctor García",
-    "poster_path": "/sP6AO11a7jWgsmT9T8j9EGIWAaZ.jpg",
-    "overview": "Spain, late 1980s. Newcomer Sara tries to fit in with the other teens in this tight-knit small town in the province of Tarragona. If only she were more like her extroverted best friend, Rebe. They go out one night at a nightclub, on the way home, they come upon a little girl holding a doll, dressed for her first communion. And that's when the nightmare begins.",
+    "id": 713704,
+    "title": "Evil Dead Rise",
+    "release_date": "2023-04-12",
+    "director": "Lee Cronin",
+    "poster_path": "/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
+    "overview": "Two sisters find an ancient vinyl that gives birth to bloodthirsty demons that run amok in a Los Angeles apartment building and thrusts them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
+    "watchProvidersES": []
+  },
+  {
+    "id": 758323,
+    "title": "The Pope's Exorcist",
+    "release_date": "2023-04-05",
+    "director": "Julius Avery",
+    "poster_path": "/9JBEPLTPSm0d1mbEcLxULjJq9Eh.jpg",
+    "overview": "Father Gabriele Amorth, Chief Exorcist of the Vatican, investigates a young boy's terrifying possession and ends up uncovering a centuries-old conspiracy the Vatican has desperately tried to keep hidden.",
     "watchProvidersES": []
   },
   {
@@ -199,37 +224,25 @@
     "watchProvidersES": []
   },
   {
-    "id": 1104040,
-    "title": "Gangs of Lagos",
-    "release_date": "2023-04-07",
-    "director": "Jadesola Osiberu",
-    "poster_path": "/nGwFsB6EXUCr21wzPgtP5juZPSv.jpg",
-    "overview": "A group of friends who each have to navigate their own destiny, growing up on the bustling streets and neighborhood of Isale Eko, Lagos.",
+    "id": 505642,
+    "title": "Black Panther: Wakanda Forever",
+    "release_date": "2022-11-09",
+    "director": "Ryan Coogler",
+    "poster_path": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+    "overview": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
     "watchProvidersES": [
       {
-        "logo_path": "/emthp39XA2YScoYL1p0sdbAH2WA.jpg",
-        "provider_id": 119,
-        "provider_name": "Amazon Prime Video",
-        "display_priority": 1
+        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+        "provider_id": 337,
+        "provider_name": "Disney Plus",
+        "display_priority": 2
+      },
+      {
+        "logo_path": "/4ywRQTLYJk8CjroNX4FbCBDQZTr.jpg",
+        "provider_id": 149,
+        "provider_name": "Movistar Plus",
+        "display_priority": 10
       }
     ]
-  },
-  {
-    "id": 713704,
-    "title": "Evil Dead Rise",
-    "release_date": "2023-04-12",
-    "director": "Lee Cronin",
-    "poster_path": "/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
-    "overview": "Two sisters find an ancient vinyl that gives birth to bloodthirsty demons that run amok in a Los Angeles apartment building and thrusts them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
-    "watchProvidersES": []
-  },
-  {
-    "id": 980078,
-    "title": "Winnie the Pooh: Blood and Honey",
-    "release_date": "2023-01-27",
-    "director": "Rhys Frake-Waterfield",
-    "poster_path": "/ewF3IlGscc7FjgGEPcQvZsAsgAW.jpg",
-    "overview": "Christopher Robin is headed off to college and he has abandoned his old friends, Pooh and Piglet, which then leads to the duo embracing their inner monsters.",
-    "watchProvidersES": []
   }
 ]

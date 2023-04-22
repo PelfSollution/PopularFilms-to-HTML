@@ -29,45 +29,36 @@ export class WatchProvider {
   }
 }
 
-//la forma que he encontrado para obtener el director es con otra llamada a la api a la pagina credits
-async function getDirector(movieId: number, apiKey: string): Promise<string> {
-  const creditsUrl = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${apiKey}`;
-  const response = await fetch(creditsUrl);
-  const { crew } = await response.json();
-  const director = crew.find((member: any) => member.job === "Director");
-  return director ? director.name : "Director no disponible";
-}
-
-async function getWatchProviders(
-  movieId: number,
-  apiKey: string
-): Promise<WatchProvider[]> {
-  const url = `https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${apiKey}`;
-  const response = await fetch(url);
+async function getFilmDetails(movieId: number, apiKey: string): Promise<{ director: string, watchProvidersES: WatchProvider[] }> {
+  const detailsUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&append_to_response=credits,watch/providers`;
+  const response = await fetch(detailsUrl);
   const data = await response.json();
-  const watchProvidersES = data?.results?.ES?.flatrate;
-  return watchProvidersES
-    ? watchProvidersES.map(
-        (provider: any) =>
-          new WatchProvider(
-            provider.logo_path,
-            provider.provider_id,
-            provider.provider_name,
-            provider.display_priority
-          )
+
+  const director = data.credits.crew.find((member: any) => member.job === "Director")?.name || "Director no disponible";
+
+  const watchProvidersES = data["watch/providers"]?.results?.ES?.flatrate?.map(
+    (provider: any) =>
+      new WatchProvider(
+        provider.logo_path,
+        provider.provider_id,
+        provider.provider_name,
+        provider.display_priority
       )
-    : [];
+  ) || [];
+
+  return { director, watchProvidersES };
 }
 
-export const loadFilms = async (n: number) => {
+
+export const loadFilms = async (n: number, page: number) => {
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=1`
   );
   const { results } = (await response.json()) as { results: any[] };
   const films: Array<Film> = [];
   for (const { id, title, release_date, poster_path, overview } of results) {
-    const director = await getDirector(id, apiKey);
-    const watchProvidersES = await getWatchProviders(id, apiKey);
+    const { director, watchProvidersES } = await getFilmDetails(id, apiKey);
+   
     films.push(
       new Film(
         id,
@@ -86,7 +77,7 @@ export const loadFilms = async (n: number) => {
 //llamo a la funcion loadfilms para ver la salida de los datos
 async function main() {
   try {
-    const films = await loadFilms(1);
+    const films = await loadFilms(1,1);
     console.log(films);
     await writeFile(
       "providersES.json",

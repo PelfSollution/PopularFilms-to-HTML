@@ -3,7 +3,7 @@ import { loadFilms } from "./films.ts";
 import { renderList, renderDetails } from "./render.ts";
 
 (async () => {
-  const films = await loadFilms(50);
+  const films = await loadFilms(50,1);
   const html = renderList(films);
   await writeFile("index.html", html);
   await Promise.all(
