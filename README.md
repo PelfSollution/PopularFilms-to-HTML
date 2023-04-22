@@ -1,12 +1,16 @@
-# Generador de HTML en Typescript
+# Popular Films [Just Watch] to HTML - Generador de HTML en Typescript
 
 Generador que utiliza TypeScript y se encarga de generar un sitio web estático que muestra una lista de películas populares y sus detalles. Obtiene la información de las películas desde la API de The Movie Database (TMDb) y crea un archivo HTML principal con una lista de películas y archivos HTML individuales para cada película con más detalles. 
 
-## Run
+## Instalación
+
+- Descarga el repositorio, ex `git clone https://github.com/PelfSollution/p2-typescript-2023.git`
+
+## Ejecución
 
 - `bun run main.ts`
 
-## Nuevas Funcionalidades
+## Funcionalidades
 
 - [x] Información de provedores de streaming donde se pueda ver la película (API Just Watch)
 
