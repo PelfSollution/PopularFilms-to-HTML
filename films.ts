@@ -74,20 +74,4 @@ export const loadFilms = async (page: number, n:number) => {
   return films;
 };
 
-//llamo a la funcion loadfilms para ver la salida de los datos
-async function main() {
-  try {
-    const films = await loadFilms(1,1);
-    console.log(films);
-    await writeFile(
-      "providersES.json",
-      JSON.stringify(films, null, 2),
-      "utf-8"
-    );
-    console.log("JSON guardado");
-  } catch (error) {
-    console.error("Error al cargar las películas:", error);
-  }
-}
 
-main();
